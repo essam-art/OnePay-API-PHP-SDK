@@ -1,6 +1,6 @@
 
 # 📦 OnePay API SDK (PHP)
-**Enterprise-Grade Payment Gateway SDK for OnePay Platform**
+**Enterprise-Grade Payment Gateway SDK for OnePay Platform**<br>
 **One Pay RESTful Web API Reference (1.0.2) <a href="https://one-pay.info/documentation">one-pay.info/documentation</a>**
 
 ---
