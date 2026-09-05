@@ -1,37 +1,25 @@
 
-<<<<<<< Updated upstream
-# 📦 OnePay API SDK (PHP + Guzzle)
-**Enterprise-Grade Payment Gateway SDK for OnePay Platform**
-=======
 # OnePay API SDK (PHP)
 **Enterprise-Grade Payment Gateway SDK for OnePay Platform**<br>
 **One Pay RESTful Web API Reference (1.1.0) <a href="https://one-pay.info/documentation">one-pay.info/documentation</a>**
 
 ---
 <a href="https://one-pay.info">www.one-pay.info</a>
->>>>>>> Stashed changes
 
 <p align="center">
-  <img src="https://one-pay.info/assets/logo.png" width="180" />
+  <img src="https://one-pay.info/assets/images/onepay.svg" width="180" />
 </p>
 
-## ⚡ نظرة عامة
-OnePay-API-SDK هو حزمة PHP رسمية للتكامل السريع مع نظام الدفع OnePay.  
-يوفّر عمليات الدفع الأساسية:
+## Overview
+OnePay-API-SDK is an official PHP package for rapid integration with the OnePay payment system.  
+It provides core payment operations:
 
-<<<<<<< Updated upstream
-- ✔ تسجيل الدخول (Account Info)  
-- ✔ إنشاء طلب دفع (Create Order)  
-- ✔ التحقق من الطلب (Check Order)  
-- ✔ استرجاع الفواتير (Invoice List)
-=======
 - ✔ Account Auth Information  
 - ✔ Create Payment Order  
 - ✔ Check Order Status  
 - ✔ Retrieve Invoices
->>>>>>> Stashed changes
 
-تم بناء SDK على:
+Built on:
 - **PHP 7.4+**
 - **GuzzleHTTP**
 - **PSR-4 Autoloading**
@@ -40,31 +28,32 @@ OnePay-API-SDK هو حزمة PHP رسمية للتكامل السريع مع ن�
 
 ---
 
-## 🚀 المميزات
-- ⚙ مبني بالكامل على **Guzzle HTTP Client**  
-- 🛡 يدعم **Validation داخلي لكل الباراميترات**  
-- 📡 يدعم Sandbox + Live mode  
-- ☁ جاهز للاستخدام كـ REST Proxy  
-- 🧩 سهل الربط في أي تطبيق PHP، Laravel، Symfony، أو نظام داخلي  
-- 🧪 مرفق **Postman Collection كامل**  
-- 📄 توثيق كامل داخل `docs/`  
+## Features
+- Fully built on **Guzzle HTTP Client**  
+- Supports **Internal Validation for all parameters**  
+- Supports Sandbox + Live mode  
+- Ready to use as REST Proxy  
+- Easy integration with any PHP app, Laravel, Symfony, or internal systems  
+- Includes **Complete Postman Collection**  
+- Full documentation in `docs/`  
 
 ---
 
-## 🧱 المتطلبات
+## Requirements
 - PHP >= 7.4  
 - Composer  
-- امتداد cURL مفعّل  
-- OnePay API Token صالح  
+- cURL extension enabled  
+- Valid OnePay API Token  
+- Merchant ID
 
 ---
 
-## 📥 التثبيت (Install)
+## Installation
 ```bash
 composer require onepay/onepay-php-sdk
 ```
 
-ثم ضع توكن OnePay:
+Then set your OnePay token:
 ```
 ONEPAY_TOKEN=YOUR_JWT_TOKEN
 ONEPAY_SANDBOX=1
@@ -72,7 +61,7 @@ ONEPAY_SANDBOX=1
 
 ---
 
-## 🗂 بنية المشروع
+## Project Structure
 ```
 onepay-php-sdk/
 ├── src/
@@ -91,8 +80,8 @@ onepay-php-sdk/
 
 ---
 
-## 🔌 طريقة الاستخدام
-### تحميل Client
+## Usage
+### Load Client
 ```php
 use OnePay\OnePayClient;
 
@@ -107,7 +96,7 @@ $sandboxOnePay = new OnePayClient($token, true);
 
 ---
 
-## 📘 أمثلة
+## Examples
 
 ### Account Info
 ```php
@@ -166,23 +155,24 @@ The SDK includes a ready-to-run REST Proxy located in examples/proxy_router.php.
 
 ---
 
-## 🧪 Postman Collection
-موجود داخل:
+## Postman Collection
+Located in:
 ```
 postman/OnePay-FULL.postman_collection.json
 ```
 
 ---
 
-## 🛡 حماية
-- لا ترفع .env  
-- استخدم HTTPS  
-- لا تشارك التوكن
-
+## Security
+- Do not upload .env
+- Use HTTPS
+- Do not share your token
 ---
 
-## 👨‍💻 المطور
-**Essam Ali**  
-GitHub: https://github.com/essam-art
+## Developer
+**Essam Dev**  
+https://essam-art.com
+---
+GitHub: https://github.com/onepay-ye
 
 ---
