@@ -50,7 +50,7 @@ Built on:
 
 ## Installation
 ```bash
-composer require onepay/onepay-php-sdk
+composer require onepay-ye/onepay-api-php-sdk
 ```
 
 Then set your OnePay token:
