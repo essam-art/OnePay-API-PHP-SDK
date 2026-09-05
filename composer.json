@@ -1,18 +1,8 @@
 {
-<<<<<<< Updated upstream
-  "name": "onepay/api-server",
-  "description": "OnePay proxy API server using Guzzle",
-  "require": {
-    "php": ">=7.4",
-    "guzzlehttp/guzzle": "^7.0",
-    "vlucas/phpdotenv": "^5.5"
-  },
-=======
-  "name": "onepay/onepay-api-php-sdk",
+  "name": "onepay-ye/onepay-api-php-sdk",
   "description": "Official PHP SDK for OnePay payment gateway integration.",
   "type": "library",
   "license": "MIT",
->>>>>>> Stashed changes
   "autoload": {
     "psr-4": {
       "OnePay\\": "src/"
